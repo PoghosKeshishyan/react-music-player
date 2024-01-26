@@ -1,0 +1,13 @@
+.TimeControls {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    gap: 1rem;
+}
+
+.TimeControls input[type=range] {
+    width: 100%;
+    cursor: pointer;
+}

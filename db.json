@@ -1,0 +1,53 @@
+{
+    "songs": [
+        {
+            "id": 1,
+            "songName": "First Love",
+            "artistName": "John Smith",
+            "trackNumber": 1,
+            "src": "songs/first-love.mp3"
+        },
+        {
+            "id": 2,
+            "songName": "Flute music",
+            "artistName": "Lamar Pinkman",
+            "trackNumber": 2,
+            "src": "songs/flute-music.mp3"
+        },
+        {
+            "id": 3,
+            "songName": "Idea 10",
+            "artistName": "Gibran Alcocer",
+            "trackNumber": 3,
+            "src": "songs/idea-10.mp3"
+        },
+        {
+            "id": 4,
+            "songName": "Mother",
+            "artistName": "Vahag Rush",
+            "trackNumber": 4,
+            "src": "songs/mother.mp3"
+        },
+        {
+            "id": 5,
+            "songName": "Rascle - Metropolitan",
+            "artistName": "Laurent Dury",
+            "trackNumber": 5,
+            "src": "songs/rascle-metropolitan.mp3"
+        },
+        {
+            "id": 6,
+            "songName": "The Life We Lived Together",
+            "artistName": "Armen Martirosyan",
+            "trackNumber": 6,
+            "src": "songs/the-life-we-lived-together.mp3"
+        },
+        {
+            "id": 7,
+            "songName": "The Life We Lived Together - 2",
+            "artistName": "Armen Martirosyan",
+            "trackNumber": 7,
+            "src": "songs/the-life-we-lived-together-25-years-later.mp3"
+        }
+    ]
+}

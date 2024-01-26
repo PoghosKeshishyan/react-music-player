@@ -1,0 +1,83 @@
+.SongRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 12px;
+    user-select: none;
+    border-radius: 6px;
+    border: 2px solid var(--white);
+    box-shadow: 2px 2px 8px var(--slate);
+}
+
+.SongRow.active {
+    border-color: var(--red);
+    background: var(--light-red-1);
+}
+
+/* ===================== info song ===================== */
+.SongRow .infoSong {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.SongRow .infoSong img {
+    width: 50px;
+}
+
+.SongRow .infoSong .buttonsSong {
+    width: 25px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.SongRow .infoSong .buttonsSong svg.fa-pause {
+    color: var(--red);
+}
+
+.SongRow .infoSong .credits {
+    width: 100%;
+}
+
+.SongRow .infoSong .credits .songName {
+    padding: 4px 0;
+    font-size: 18px;
+}
+
+.SongRow .infoSong .credits .sub_credits {
+    display: flex;
+    justify-content: space-between;
+    color: var(--slate);
+}
+
+
+/* ===================== download song ===================== */
+.downloadSong {
+    width: 50px;
+    padding: 12px;
+    font-size: 1.3rem;
+    color: var(--blue);
+    text-align: center;
+    border-radius: 6px;
+    background: var(--cyan);
+}
+
+.downloadSong:hover {
+    cursor: pointer;
+    color: var(--white);
+    background: var(--blue);
+}
+
+.downloadSong.active {
+    color: var(--red);
+    background: var(--light-red-2);
+}
+
+.downloadSong.active:hover {
+    color: var(--white);
+    background: var(--red);
+}

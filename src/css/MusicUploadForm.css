@@ -1,0 +1,76 @@
+.MusicUploadForm {
+    position: fixed;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    background: var(--alpha-gray);
+}
+
+.MusicUploadForm form {
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 20%; left: 50%;
+    border-radius: 6px;
+    text-align: center;
+    transform: translateX(-50%);
+    background: var(--white);
+}
+
+.MusicUploadForm form svg.fa-xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.7rem;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.MusicUploadForm form h2 {
+    margin: 0 0 30px 0;
+    font-size: 1.9rem;
+    color: var(--blue);
+}
+
+.MusicUploadForm form .warning {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--slate);
+}
+
+.MusicUploadForm form .warning svg {
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.MusicUploadForm form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.MusicUploadForm form label svg {
+    padding-right: 5px;
+}
+
+.MusicUploadForm form input[type=file] {
+    display: none;
+}
+
+.MusicUploadForm form .selectedFile b {
+    color: var(--blue);
+}
+
+.MusicUploadForm form .selectedFile i {
+    text-decoration: underline;
+}
+
+.MusicUploadForm form .uploading {
+    margin-top: 20px;
+}
+
+.MusicUploadForm form input[type=submit] {
+    margin-top: 20px;
+}
