@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 import { AudioContext } from '../context/AudioContext';
 import '../css/TimeControls.css';
 
@@ -9,6 +9,9 @@ export function TimeControls() {
     const { audio, addZero } = useContext(AudioContext);
 
     useEffect(() => {
+        // audio duration
+        setTimeout(audioDurationFunc, 100)
+
         const timeInterval = setInterval(() => {
             // input - range
             setCurrentTime(audio.currentTime);
@@ -19,17 +22,22 @@ export function TimeControls() {
             setAudioCurrentTime(`${minutes}:${seconds}`);
         }, 1000)
 
-        // audio duration
-        setTimeout(() => {
-            const minutes = addZero(Math.floor(audio.duration / 60));
-            const seconds = addZero(Math.floor(audio.duration % 60));
-            setCurrentSongDuration(`${minutes}:${seconds}`);
-        }, 200)
-
         return () => {
             clearInterval(timeInterval);
         }
     }, [])
+
+    const audioDurationFunc = () => {
+        const minutes = addZero(Math.floor(audio.duration / 60));
+        const seconds = addZero(Math.floor(audio.duration % 60));
+        const result = `${minutes}:${seconds}`;
+    
+        if (result !== 'NaN:NaN') {
+            setCurrentSongDuration(`${minutes}:${seconds}`);
+        } else {
+            setTimeout(audioDurationFunc, 100);
+        }
+    }
 
     const handleChangeInputRange = (e) => {
         const time = e.target.value;
